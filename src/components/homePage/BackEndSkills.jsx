@@ -76,7 +76,7 @@ const BackEndSkills = ({ fullscreenBackEnd, showBackEnd, setShowBackEnd }) => {
             >
               <Card
                 className="backEndSkills text-dark mx-auto p-2"
-                style={{ maxWidth: '200px' }}
+                style={{ maxWidth: '250px' }}
                 ref={(element) => {
                   cardRef.current[index] = element;
                 }}
