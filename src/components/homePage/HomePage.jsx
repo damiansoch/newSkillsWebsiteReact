@@ -13,6 +13,7 @@ import { useRef } from 'react';
 import BackEndSkills from './BackEndSkills';
 import FrontEndSkills from './FrontEndSkills';
 import ContactPage from './ContactPage';
+import Footer from '../../Footer';
 
 const HomePage = () => {
   //modal
@@ -157,6 +158,7 @@ const HomePage = () => {
         handleCloseOffcanvas={handleCloseOffcanvas}
       />
       {/* ----------- */}
+      <Footer />
     </>
   );
 };
