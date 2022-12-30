@@ -1,12 +1,10 @@
 import './App.css';
-import CardContainer from './components/CardContainer';
-import TitleModal from './components/TitleModal';
+import HomePage from './components/homePage/HomePage';
 
 function App() {
   return (
     <>
-      <TitleModal />
-      <CardContainer />
+      <HomePage />
     </>
   );
 }
