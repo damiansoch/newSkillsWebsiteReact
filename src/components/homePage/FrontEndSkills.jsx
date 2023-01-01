@@ -5,11 +5,14 @@ import Modal from 'react-bootstrap/Modal';
 import Row from 'react-bootstrap/Row';
 import Accordion from 'react-bootstrap/Accordion';
 import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 
 import { gsap } from 'gsap';
 
 import { useRef } from 'react';
 import { useEffect } from 'react';
+
+import * as Icon from 'react-bootstrap-icons';
 
 const FrontEndSkills = ({
   fullscreenFrontEnd,
@@ -66,10 +69,19 @@ const FrontEndSkills = ({
       show={showFrontEnd}
       fullscreen={fullscreenFrontEnd}
       onHide={() => setShowFrontEnd(false)}
-      className="homePageModal"
+      className="homePageModal "
     >
-      <Modal.Header closeButton className="text-white">
+      <Modal.Header closeButton className="text-white ">
         <Modal.Title>Front End</Modal.Title>
+        <Button
+          variant="outline-primary"
+          className="text-white"
+          onClick={() => {
+            setShowFrontEnd(false);
+          }}
+        >
+          <Icon.X size={40} />
+        </Button>
       </Modal.Header>
       <Modal.Body className="text-white">
         <Row>

@@ -1,4 +1,8 @@
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from 'react-bootstrap/Button';
+
+import * as Icon from 'react-bootstrap-icons';
+
 import '../../styles/homePageOffcanvas.scss';
 
 const ContactPage = ({ showOffcanvas, handleCloseOffcanvas }) => {
@@ -11,8 +15,17 @@ const ContactPage = ({ showOffcanvas, handleCloseOffcanvas }) => {
       placement="bottom"
       scroll="true"
     >
-      <Offcanvas.Header closeButton>
+      <Offcanvas.Header>
         <Offcanvas.Title>Contact</Offcanvas.Title>
+        <Button
+          variant="outline-primary"
+          className="text-white"
+          onClick={() => {
+            handleCloseOffcanvas();
+          }}
+        >
+          <Icon.X size={40} />
+        </Button>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <h4 className="mb-4">Damian Socha</h4>

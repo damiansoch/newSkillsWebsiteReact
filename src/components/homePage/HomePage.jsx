@@ -13,7 +13,9 @@ import { useRef } from 'react';
 import BackEndSkills from './BackEndSkills';
 import FrontEndSkills from './FrontEndSkills';
 import ContactPage from './ContactPage';
-import Footer from '../../Footer';
+
+import * as Icon from 'react-bootstrap-icons';
+import Footer from './Footer';
 
 const HomePage = () => {
   //modal
@@ -108,6 +110,7 @@ const HomePage = () => {
               className="col-8 text-white"
               variant="outline-primary"
             >
+              <Icon.Front className="me-2" />
               Front End
             </Button>
           </Col>
@@ -119,6 +122,7 @@ const HomePage = () => {
               className="col-8 text-white"
               variant="outline-primary"
             >
+              <Icon.Back className="me-2" />
               Back End
             </Button>
           </Col>
@@ -130,6 +134,7 @@ const HomePage = () => {
                 handleShowOffcanvas();
               }}
             >
+              <Icon.PhoneVibrateFill className="me-2" />
               Contact
             </Button>
           </Col>

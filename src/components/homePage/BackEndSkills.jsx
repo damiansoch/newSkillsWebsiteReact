@@ -1,15 +1,17 @@
 import '../../styles/homePageModal.scss';
 
 import Modal from 'react-bootstrap/Modal';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
 
 import { gsap } from 'gsap';
 import { useEffect, useRef } from 'react';
+
+import * as Icon from 'react-bootstrap-icons';
 
 const BackEndSkills = ({ fullscreenBackEnd, showBackEnd, setShowBackEnd }) => {
   const backEndSkills = [
@@ -66,6 +68,15 @@ const BackEndSkills = ({ fullscreenBackEnd, showBackEnd, setShowBackEnd }) => {
     >
       <Modal.Header closeButton className="text-white">
         <Modal.Title>Back End</Modal.Title>
+        <Button
+          variant="outline-primary"
+          className="text-white"
+          onClick={() => {
+            setShowBackEnd(false);
+          }}
+        >
+          <Icon.X size={40} />
+        </Button>
       </Modal.Header>
       <Modal.Body className="text-white">
         <Row>
