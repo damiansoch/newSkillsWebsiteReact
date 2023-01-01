@@ -227,11 +227,6 @@ const FrontEndSkills = ({
                   </h5>
                   <h5 className="mb-2 mx-2">
                     <Badge text="secondary" bg="warning">
-                      Fluent Validation
-                    </Badge>
-                  </h5>
-                  <h5 className="mb-2 mx-2">
-                    <Badge text="secondary" bg="warning">
                       User authenticarion
                     </Badge>
                   </h5>
@@ -243,6 +238,11 @@ const FrontEndSkills = ({
                   <h5 className="mb-2 mx-2">
                     <Badge text="secondary" bg="warning">
                       Visual Studio Code
+                    </Badge>
+                  </h5>
+                  <h5 className="mb-2 mx-2">
+                    <Badge text="secondary" bg="warning">
+                      ...
                     </Badge>
                   </h5>
                 </Accordion.Body>

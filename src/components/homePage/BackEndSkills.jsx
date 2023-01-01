@@ -232,11 +232,7 @@ const BackEndSkills = ({ fullscreenBackEnd, showBackEnd, setShowBackEnd }) => {
                       Microsoft SQL Server
                     </Badge>
                   </h5>
-                  <h5 className="mb-2 mx-2">
-                    <Badge text="secondary" bg="warning">
-                      Fluent Validation
-                    </Badge>
-                  </h5>
+
                   <h5 className="mb-2 mx-2">
                     <Badge text="secondary" bg="warning">
                       User authenticarion
@@ -250,6 +246,11 @@ const BackEndSkills = ({ fullscreenBackEnd, showBackEnd, setShowBackEnd }) => {
                   <h5 className="mb-2 mx-2">
                     <Badge text="secondary" bg="warning">
                       Visual Studio Code
+                    </Badge>
+                  </h5>
+                  <h5 className="mb-2 mx-2">
+                    <Badge text="secondary" bg="warning">
+                      ...
                     </Badge>
                   </h5>
                 </Accordion.Body>

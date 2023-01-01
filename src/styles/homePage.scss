@@ -19,6 +19,15 @@ body {
 
   justify-content: center;
   min-height: 92vh;
+  p {
+    text-shadow: 1px -1px black;
+  }
+  img {
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      scale: 1.05;
+    }
+  }
   .title_container {
     opacity: 0;
     .title {
